@@ -138,6 +138,8 @@ button:hover{
 /* Desktop CSS */
 @media (max-width: 500px) {
 
+    /* header */
+
     header{
         display:flex;
         justify-content: center;
@@ -154,26 +156,38 @@ button:hover{
         margin: 0 3%;
     }
 
+    nav span{
+        border-left:2px solid #626262;
+    
+    }
+
+    /*influential artists*/
+
     h1 {
-        font-size: 4.3rem;
-        line-height: 6rem;
+        font-size: 4rem;
+        line-height: 5rem;
         font-weight: bold;
         margin: 2% auto;
         padding-top: 3%;
     }
 
-
-
-    .title-container div {	
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-        background-size: auto;	
+     .title-container div {	
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
         color: white;	
         width:100%;
+        height: 65vh;
     }
 
     .title-container hr {
         width: 100%;
+        margin-top: 0%;
+        margin-bottom: 6%;
     }
+
+
+    /*artists flexbox (main) */
 
     .artists-container{
         justify-content: space-between;
@@ -207,6 +221,8 @@ button:hover{
 
     div.artist:last-child {
         width: 100%;
+        margin-top: 3.5%;
+        margin-bottom: 17%;
     }
 
 }

@@ -227,8 +227,6 @@ console.log(artists[8])
 function getArtistByIndex(array, index) {
     return `The artist at index ${index} is ${array[index].name}`;
   }
-  /**
-
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
@@ -275,16 +273,17 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(id, name, years, genre, nationality, bio){
+function addArtist(array, id, name, years, genre, nationality, bio){
 const newObj = {
 id, name, years, genre, nationality, bio
 
   }
-  artists.push(newObj)
+  array.push(newObj);
+  return array;
 }
-addArtist(artists.length,'Sam Tarullo','1987 - ?','Music','Italian',
+addArtist(artists, artists.length,'Sam Tarullo','1987 - ?','Music','Italian',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.');
-  console.log(artists);
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
